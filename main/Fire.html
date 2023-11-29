@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .button_container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30%;
+        }
+
+        .description, .link {
+        font-family: 'Amatic SC', cursive;
+        text-align: center;
+        }
+
+        .description {
+        font-size: 35px;
+        }
+
+        .btn {
+        border: none;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        background-color: #222;
+        padding: 17px 60px;
+        margin: 0 auto;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+        width: 300px;
+        }
+
+        .btn span {
+        position: relative; 
+        z-index: 1;
+        }
+
+        .btn:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 490%;
+        width: 140%;
+        background: #ffffff;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+        transform: translateX(-98%) translateY(-25%) rotate(45deg);
+        }
+
+        .btn:hover:after {
+        -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+        transform: translateX(-9%) translateY(-25%) rotate(45deg);
+        }
+        #navbar-example2 {
+            position: sticky;
+            top: 0;
+            z-index: 1
+        }
+        .common-caution {
+            clear: both;
+            position: relative;
+            margin-top: 20px;
+            padding: 12px 30px;
+            border: 1px solid #eadfdb;
+            background: #fcf5f2;
+            color: #cc3300;
+            line-height: 1.6em;
+            overflow: hidden;
+        }
+        .common-caution h5 {
+            padding-left: 30px;
+            background: url('') 0 center no-repeat;
+            margin: 0 0 8px;
+            color: #cc3300;
+        }
+        .common-caution {
+            padding: 8px 15px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="메인화면.html">
+                <i class="fa-solid fa-person-running fa-1x" style="color:red"></i>
+                &nbsp응급구조
+            </a>
+            </button>
+        </div>
+    </nav>
+
+    <center>
+        <h1 id="car"><br>화재 발생시 행동요령</h1>
+    </center>
+    <div>
+        <img style="position: absolute; left: 38%; top: 180px;" src="./images/행동0.jpg" width="450" height="450" />
+    </div>
+    <center>
+        <h3>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </h3>
+        <h3>
+            1. 호흡기 보호하기</h3>
+        <img margin="auto" width="580" height="580" src="./images/행동1.jpg" />
+        <p> <br>
+            물 적신 수건, 담요 등으로 코와 입을 막아 연기가 폐에 들어가지 않게 하기<br><br><br><br></p>
+        <h3>
+            2. 화재경보 비상벨 누르기</h3>
+        <img margin="auto" width="580" height="580" src="./images/행동2.jpg" />
+        <p> <br>
+            대비 훈련에 정기적으로 참여해 비상벨 위치 및 피난로 등 미리 숙지하기<br><br><br><br></p>
+        <h3>
+            전기 스위치 내리기</h3>
+        <img margin="auto" width="580" height="580" src="./images/행동3.jpg" />
+        <p> <br>
+            누전차단기, 가스벨브, 분전반 등을 잠가 추가적인 피해 줄이기<br><br><br><br></p>
+        <h3>
+            탈출 시 손잡이 조심히 잡기</h3>
+        <img margin="auto" width="580" height="580" src="./images/행동4.jpg" />
+        <p> <br>
+            문 열기 전 손잡이가 잡았을 때 뜨겁다면 다른 출구 찾기<br><br><br><br></p>
+        <h3>
+            낮은 자세로 이동하기</h3>
+        <img margin="auto" width="580" height="580" src="./images/행동5.jpg" />
+        <p> <br>
+            연기 나면 배를 바닥에 대지 않고 팔과 무릎으로 기어서 이동하기<br><br><br><br></p>
+        <h3>
+            엘리베이터 사용 금지</h3>
+        <img margin="auto" width="580" height="580" src="./images/행동6.jpg" />
+         <p> <br>
+            반드시 비상계단으로 이동하고 아래층으로 이동 불가능하면 옥상으로 대피<br><br><br><br></p>
+        <h3>
+             경량칸막이 부수고 대피</h3>
+         <img margin="auto" width="580" height="580" src="./images/행동7.jpg" />
+        <p> <br>
+             대피 곤란 시, 아파트 베란다에 설치된 경량칸막이 파괴 후 옆 세대로 대피<br></p>
+             <h3>
+                풍향 체크 후 구조대기</h3>
+        <img margin="auto" width="580" height="580" src="./images/행동8.jpg" />
+         <p> <br>
+            연기를 마시지 않도록 바람이 불어오는 쪽에서 구조 대기하기<br><br><br><br></p>
+            <h3>
+                젖은 천으로 문틈 막기</h3>
+        <img margin="auto" width="580" height="580" src="./images/행동9.jpg" />
+         <p> <br>
+            화재 현장 고립 시, 방안에 연기 못 들어오게 문틈 막기<br><br><br><br></p>
+
+            <div class="common-caution">
+                <h5>⚠주의사항⚠</h5>
+                <ul class="common-list">
+                    <li><span class="text-color-default">1. 낮은 자세로 안내원의 안내를 따라 대피합시다.</span></li>
+                    <li><span class="text-color-default">2. 대피한 경우에는 바람이 불어오는 쪽에서 구조를 기다립시다.</span></li>
+                    <li><span class="text-color-default">3. 연기가 많을 때 주의사항입니다.</span></li>
+                </ul>
+            </div>
+        </center>
+        <script src="./scripts/search.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8d7f9ad8fc.js" crossorigin="anonymous"></script>
+</body>
+</html>

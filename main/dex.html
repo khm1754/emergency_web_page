@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id = myCanvas width = 300 height = 300 style = "background-color: aquamarine;">
+    </canvas>
+    <script>
+      var ctx = myCanvas.getContext("2d");
+      var x_pos = 0;
+      var y_pos = 0;
+      var MyImg = new Image();
+      MyImg.src = "ambu.png";
+      function MyTimer(){
+        ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
+        ctx.drawImage(MyImg, x_pos, y_pos);
+      }
+      function MyKeyDownHandler (MyEvent) {
+        if (MyEvent.keyCode == 37) { x_pos = x_pos - 10; }//right
+        if (MyEvent.keyCode == 38) { y_pos = y_pos - 10; }//down
+        if (MyEvent.keyCode == 39) { x_pos = x_pos + 10; }
+        if (MyEvent.keyCode == 40) { y_pos = y_pos + 10; }
+      }
+      setInterval(MyTimer, 40);
+      addEventListener("keydown", MyKeyDownHandler);
+      </script>
+</body>
+</html>
